@@ -1,0 +1,6 @@
+{
+  "name": "Sistem Pengiriman Slip Gaji Web",
+  "description": "Aplikasi untuk mengimpor data gaji dari Excel, mencetak PDF, dan mengirimkan notifikasi via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
