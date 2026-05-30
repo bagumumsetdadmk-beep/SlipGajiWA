@@ -19,13 +19,20 @@ Berikut adalah panduan lengkap cara deploy dari awal.
 
 4. **Cara Upload ke GitHub (Pilih salah satu):**
    
-   **Cara A (Upload Manual via Web - Paling Gampang):**
+   **Cara A (Upload Manual via Web - Paling Gampang untuk file sedikit):**
    - Balik ke halaman repository GitHub yang baru saja Anda buat.
    - Klik tulisan **"uploading an existing file"** (di bawah bagian Quick setup).
-   - *Drag-and-drop* (seret) semua file dan folder hasil ekstrak ZIP tadi dari komputer Anda ke halaman GitHub tersebut. (Catatan: Pastikan Anda memilih semua file di *dalam* foldernya, bukan foldernya).
-   - Tunggu proses upload selesai, lalu klik tombol hijau **Commit changes**.
+   - *Drag-and-drop* (seret) folder hasil ekstrak (seperti folder `src`, `public` beserta isinya) dari komputer Anda langsung ke halaman GitHub tersebut.
+   - **PENTING JIKA GAGAL UPLOAD FOLDER (seperti `assets` / `src`):** Pastikan Anda melakukan **Drag & Drop** (menyeret) folder secara langsung ke browser. Jangan menggunakan tombol "choose your files" karena browser seringkali menolak memilih folder utuh dari tombol tersebut.
+   
+   **Cara B (Menggunakan Aplikasi GitHub Desktop - SANGAT DIREKOMENDASIKAN):**
+   Jika via web selalu gagal atau tidak lengkap:
+   1. Download dan instal [GitHub Desktop](https://desktop.github.com/).
+   2. Login dengan akun GitHub Anda.
+   3. Pilih **File** -> **Add Local Repository** -> Pilih folder hasil ekstrak ZIP (pastikan sudah ada folder `.git`, jika belum ada, Github Desktop akan menawarkan "create a repository").
+   4. Tulis deskripsi (Commit message), dan klik **Publish repository** / **Push origin**. Folders & files akan otomatis terupload semua!
 
-   **Cara B (Menggunakan Command Line / Git Bash):**
+   **Cara C (Menggunakan Command Line / Git Bash):**
    - Buka terminal / command prompt di folder hasil ekstrak ZIP tersebut.
    - Ketik perintah berikut secara berurutan:
      ```bash
